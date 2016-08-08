@@ -1,9 +1,11 @@
 {
   "name": "google-translate-promise",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Google Translate API Node.js module with Promises flow",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha tests/test"
+  },
   "keywords": [
     "google",
     "translate",
@@ -17,6 +19,6 @@
     "request": "^2.74.0"
   },
   "devDependencies": {
-    "mocha": "^3.0.1"
+    "mocha": "^3.0.2"
   }
 }
