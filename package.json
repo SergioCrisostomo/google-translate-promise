@@ -1,0 +1,22 @@
+{
+  "name": "google-translate-promise",
+  "version": "0.0.1",
+  "description": "Google Translate API Node.js module with Promises flow",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "google",
+    "translate",
+    "node.js",
+    "promises"
+  ],
+  "author": "Sergio Crisostomo",
+  "license": "ISC",
+  "dependencies": {
+    "html-entities": "^1.2.0",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.1"
+  }
+}
