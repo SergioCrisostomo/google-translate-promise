@@ -23,7 +23,7 @@ class Translate {
 	applyOptions(defaults, newOpts) {
 		Object.keys(newOpts).reduce(
 			(def, prop) => (this.options[prop] = newOpts[prop], def),
-			this.options = defaults
+			this.options = JSON.parse(JSON.stringify(defaults))
 		);
 	}
 
