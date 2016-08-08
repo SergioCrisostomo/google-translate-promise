@@ -48,7 +48,7 @@ class Translate {
 
 			body = JSON.parse(body || '{}');
 			if (!body.data || !body.data.translations) {
-				return reject(`Unexpected Google Translate API body: ${body}`);
+				return reject(`Unexpected Google Translate API body: ${JSON.stringify(body)}`);
 			}
 
 			const raw = body.data.translations[0].translatedText;
