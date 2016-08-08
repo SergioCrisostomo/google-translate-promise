@@ -8,7 +8,7 @@ const entities = new Entities.AllHtmlEntities();
 
 // defaults
 const options = {
-	API_KEY: '',
+	API_KEY: process.env.GOOGLE_TRANSLATE_API_KEY || '',
 	URL: 'https://www.googleapis.com/language/translate/v2',
 	throttle: 0.5,
 	timeout: 5000
