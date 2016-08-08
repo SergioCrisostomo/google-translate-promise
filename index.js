@@ -27,7 +27,7 @@ class Translate {
 		);
 	}
 
-	setDefaults(defaults) {
+	setGlobalDefaults(defaults) {
 		Object.keys(defaults).forEach(
 			prop => options[prop] = defaults[prop]
 		);
