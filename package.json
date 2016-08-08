@@ -1,6 +1,6 @@
 {
   "name": "google-translate-promise",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Google Translate API Node.js module with Promises flow",
   "main": "index.js",
   "scripts": {
