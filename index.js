@@ -10,7 +10,7 @@ const entities = new Entities.AllHtmlEntities();
 const options = {
 	API_KEY: process.env.GOOGLE_TRANSLATE_API_KEY || '',
 	URL: 'https://www.googleapis.com/language/translate/v2',
-	throttle: 0.5,
+	throttle: 500,
 	timeout: 5000
 };
 
@@ -53,7 +53,7 @@ class Translate {
 
 			const raw = body.data.translations[0].translatedText;
 			resolve(entities.decode(raw));
-			setTimeout(this.dispatch.bind(this), this.options.throttle * 1000);
+			setTimeout(this.dispatch.bind(this), this.options.throttle);
 		});
 	}
 

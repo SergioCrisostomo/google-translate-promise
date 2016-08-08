@@ -22,7 +22,7 @@ This module has some default options:
 	const options = {
 		API_KEY: process.env.GOOGLE_TRANSLATE_API_KEY || '',
 		URL: 'https://www.googleapis.com/language/translate/v2',
-		throttle: 0.5,
+		throttle: 500,
 		timeout: 5000
 	};
 
@@ -30,8 +30,8 @@ What they do:
 
  - `API_KEY` is your private key to acess the API. You can get one [here](https://cloud.google.com/translate/v2/quickstart).
  - `URL` you should not need to change this.
- - `throttle` defaults to 500ms, and is there to avoid too many requests per second
- - `timeout` if the request takes longer than the _timeout_ the Promise will be rejected. Defaults to 5 seconds.
+ - `throttle` defaults to 500ms, and is there to avoid too many requests per second. Value must be in _ms_.
+ - `timeout` if the request takes longer than the _timeout_ the Promise will be rejected. Defaults to 5 seconds. Value must be in _ms_.
 
 > You can pass otpions to the module in the constructor, or using `.setGlobalDefaults` method.
 
